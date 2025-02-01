@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <!-- daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/265bd820cd.js" crossorigin="anonymous"></script>
+  <!-- style -->
+  <style>
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .animate-fadeInUp {
+        animation: fadeInUp 2.5s ease-out forwards;
+    }
+</style>
+</head>
+<body>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="container mx-auto">
+            <div class="navbar  ">
+                <div class="navbar-start">
+                  <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Contact us</a></li> 
+                    </ul>
+                  </div>
+                  <div ">
+                    <img class="w-50 h-10" src="./c2-assets/logo-header.png " alt="">
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex space-x-3">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div >
+                    <a class="btn bg-transparent text-black  border-[#179800]">Login</a>
+                  </div>
+                  <div class=" ">
+                    <a class="btn bg-[#179800] text-white rounded-lg py-3">Register</a>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <section class="container mx-auto justify-center justify-items-center animate-fadeInUp  mt-20">
+          <h1 class="font-semibold text-5xl text-center">Freshness <span class="text-[#179800]">You Can</span>
+            <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
+          <p class="mt-4 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p> 
+          <img class="w-30" src="./c2-assets/hero-vegetables.png" alt="">
+        </section>
+    </header>
+    
+    <main>
+      <section class="container mx-auto ">
+        <h1 class="mt-20  lg:ml-64 text-3xl font-semibold text-[#179800]">Services</h1>
+        <!-- card -->
+         <div class="lg:flex space-x-5 justify-center">
+          <!-- card1 -->
+          <div class="card bg-[#EFEBE3] w-80 shadow-xl mt-4 ml-5">
+            <figure class="px-10 pt-10">
+              <img
+                src="./c2-assets/service.png"
+                alt="Shoes"
+                class="rounded-full bg-white border border-white-300 p-3" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services !</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              
+              </div>
+            </div>
+            <div class="card bg-[#EFEBE3] w-80 shadow-xl mt-4">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./c2-assets/delivery.png"
+                  alt="Shoes"
+                  class="rounded-full bg-white border border-white-300 p-3 " />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Fast Delivery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                
+                </div>
+              </div>
+              <div class="card bg-[#EFEBE3] w-80 shadow-xl mt-4">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./c2-assets/healthy.png"
+                    alt="Shoes"
+                    class="rounded-full bg-white border border-white-300 p-3" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Healthy Products </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  
+                  </div>
+                </div>
+          </div>
+         </div>
+      </section>
+      <!-- Popular Products -->
+      <section class="bg-[#EFEBE3] mt-32 lg:h-[777px] flex items-center justify-center">
+        <div class="container mx-auto mt-auto lg:mt-14">
+          <h1 class="text-3xl font-semibold text-[#179800] lg:ml-48">Popular Products</h1>
+          <div class="  lg:flex  justify-center lg:mt-14">
+            <!-- Card first -->
+            <div class="card bg-gradient-to-l from-[#F9DF8A] to-[#53DB3A] w-96 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title text-white">30% off!</h2>
+                <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                <button class="btn btn-primary bg-white text-black w-36">Buy Now</button>
+              </div>
+              <figure>
+                <img class="ml-20"
+                  src="./c2-assets/vegetable-offer.png"
+                  alt="Shoes" />
+              </figure>
+            </div>
+            <div class=" grid grid-cols-2 gap-3 lg:grid-cols-3  ">
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-76 h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 w-full sm:w-56 lg:w-auto h-auto shadow-xl ml-3 mt-3 lg:ml-10 mb-6">
+                <div class="flex">
+                  <img class="w-20 bg-[#EFEBE3] rounded-md ml-3 mt-3" src="./c2-assets/onion.png" alt="Onion">
+                  <div class="ml-5 mt-4">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <h3 class="font-medium">Onion 1 KG</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        </div>
+       </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
